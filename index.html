@@ -1,169 +1,188 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人自我介绍</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f8f9fa;
-        }
-        
-        .container {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-        }
-        
-        header {
-            text-align: center;
-            border-bottom: 2px solid #e9ecef;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-        
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-        
-        .affiliation {
-            font-size: 1.2em;
-            color: #7f8c8d;
-        }
-        
-        section {
-            margin-bottom: 30px;
-        }
-        
-        h2 {
-            color: #3498db;
-            border-left: 4px solid #3498db;
-            padding-left: 15px;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-        }
-        
-        h3 {
-            color: #2c3e50;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-        }
-        
-        .research-item, .award-item, .patent-item, .work-item {
-            margin-bottom: 20px;
-            padding-bottom: 15px;
-            border-bottom: 1px dashed #eee;
-        }
-        
-        .research-item:last-child, .award-item:last-child, .patent-item:last-child, .work-item:last-child {
-            border-bottom: none;
-        }
-        
-        .date {
-            color: #7f8c8d;
-            font-weight: bold;
-        }
-        
-        .institution {
-            font-style: italic;
-            color: #7f8c8d;
-        }
-        
-        ul {
-            padding-left: 20px;
-        }
-        
-        li {
-            margin-bottom: 8px;
-        }
-        
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        
-        /* 新增图标样式 */
-        .icon {
-            margin-right: 8px;
-            color: #3498db;
-        }
-        
-        .section-icon {
-            margin-right: 10px;
-            font-size: 1.2em;
-        }
-        
-        .award-icon, .patent-icon, .research-icon, .interest-icon {
-            color: #3498db;
-            font-weight: bold;
-        }
-        
-        /* 超链接样式优化 */
-        a.demo-link {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: 600;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 2px;
-            transition: all 0.3s ease;
-        }
-        
-        a.demo-link:hover {
-            color: #2980b9;
-            border-bottom-color: #2980b9;
-            background-color: #f1f9ff;
-            padding: 2px 5px;
-            border-radius: 3px;
-        }
-        
-        /* 待上传提示样式 */
-        .pending-link {
-            color: #7f8c8d;
-            font-weight: 500;
-            margin-top: 8px;
-            display: inline-block;
-        }
-        
-        /* 浏览量显示模块样式 */
-        .view-count-footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            text-align: center;
-            color: #7f8c8d;
-            font-size: 14px;
-        }
-        
-        @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
-            
-            .container {
-                padding: 20px;
-            }
-        }
-    </style>
-</head>
+<!DOCTYPE html> 
+ <html lang="zh-CN"> 
+ <head> 
+     <meta charset="UTF-8"> 
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+     <title>个人自我介绍</title> 
+     <style> 
+         body { 
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+             line-height: 1.6; 
+             color: #333; 
+             max-width: 1000px; 
+             margin: 0 auto; 
+             padding: 20px; 
+             background-color: #f8f9fa; 
+         } 
+         
+         .container { 
+             background-color: white; 
+             border-radius: 10px; 
+             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+             padding: 30px; 
+         } 
+         
+         header { 
+             text-align: center; 
+             border-bottom: 2px solid #e9ecef; 
+             padding-bottom: 20px; 
+             margin-bottom: 30px; 
+         } 
+         
+         h1 { 
+             color: #2c3e50; 
+             margin-bottom: 10px; 
+         } 
+         
+         .affiliation { 
+             font-size: 1.2em; 
+             color: #7f8c8d; 
+         } 
+         
+         section { 
+             margin-bottom: 30px; 
+         } 
+         
+         h2 { 
+             color: #3498db; 
+             border-left: 4px solid #3498db; 
+             padding-left: 15px; 
+             margin-bottom: 20px; 
+             display: flex; 
+             align-items: center; 
+         } 
+         
+         h3 { 
+             color: #2c3e50; 
+             margin-bottom: 10px; 
+             display: flex; 
+             align-items: center; 
+         } 
+         
+         .research-item, .award-item, .patent-item, .work-item { 
+             margin-bottom: 20px; 
+             padding-bottom: 15px; 
+             border-bottom: 1px dashed #eee; 
+         } 
+         
+         .research-item:last-child, .award-item:last-child, .patent-item:last-child, .work-item:last-child { 
+             border-bottom: none; 
+         } 
+         
+         .date { 
+             color: #7f8c8d; 
+             font-weight: bold; 
+         } 
+         
+         .institution { 
+             font-style: italic; 
+             color: #7f8c8d; 
+         } 
+         
+         ul { 
+             padding-left: 20px; 
+         } 
+         
+         li { 
+             margin-bottom: 8px; 
+         } 
+         
+         .contact-info { 
+             display: flex; 
+             justify-content: center; 
+             gap: 20px; 
+             flex-wrap: wrap; 
+             margin-top: 20px; 
+         } 
+         
+         .contact-item { 
+             display: flex; 
+             align-items: center; 
+             gap: 5px; 
+         } 
+         
+         .icon { 
+             margin-right: 8px; 
+             color: #3498db; 
+         } 
+         
+         .section-icon { 
+             margin-right: 10px; 
+             font-size: 1.2em; 
+         } 
+         
+         .award-icon, .patent-icon, .research-icon, .interest-icon { 
+             color: #3498db; 
+             font-weight: bold; 
+         } 
+         
+         a.demo-link { 
+             color: #3498db; 
+             text-decoration: none; 
+             font-weight: 600; 
+             border-bottom: 2px solid #3498db; 
+             padding-bottom: 2px; 
+             transition: all 0.3s ease; 
+         } 
+         
+         a.demo-link:hover { 
+             color: #2980b9; 
+             border-bottom-color: #2980b9; 
+             background-color: #f1f9ff; 
+             padding: 2px 5px; 
+             border-radius: 3px; 
+         } 
+         
+         .pending-link { 
+             color: #7f8c8d; 
+             font-weight: 500; 
+             margin-top: 8px; 
+             display: inline-block; 
+         } 
+         
+         .view-count-footer { 
+             margin-top: 40px; 
+             padding-top: 20px; 
+             border-top: 1px solid #eee; 
+             text-align: center; 
+             color: #7f8c8d; 
+             font-size: 14px; 
+         } 
+         
+         .school-photo-section { 
+             text-align: center; 
+             margin-bottom: 30px; 
+             padding: 20px; 
+             background-color: #fafbfc; 
+             border-radius: 8px; 
+             border: 1px solid #e9ecef; 
+         } 
+         
+         .school-photo { 
+             max-width: 100%; 
+             height: auto; 
+             border-radius: 8px; 
+             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+             margin-bottom: 10px; 
+         } 
+         
+         .school-photo-caption { 
+             color: #7f8c8d; 
+             font-size: 0.9em; 
+             font-style: italic; 
+         } 
+         
+         @media (max-width: 768px) { 
+             body { 
+                 padding: 10px; 
+             } 
+             
+             .container { 
+                 padding: 20px; 
+             } 
+         } 
+     </style> 
+ </head> 
 <body>
     <div class="container">
         <header>
