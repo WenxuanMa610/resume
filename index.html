@@ -181,6 +181,53 @@
                  padding: 20px; 
              } 
          } 
+      .campus-background { 
+             background-image: url('https://github.com/WenxuanMa610/resume/blob/master/yield.jpg?raw=true'); 
+             background-size: cover; 
+             background-position: center; 
+             background-repeat: no-repeat; 
+             position: relative; 
+             border-radius: 8px; 
+             padding: 20px; 
+             margin-bottom: 30px; 
+         } 
+         
+         .campus-background::before { 
+             content: ''; 
+             position: absolute; 
+             top: 0; 
+             left: 0; 
+             right: 0; 
+             bottom: 0; 
+             background-color: rgba(255, 255, 255, 0.85); 
+             border-radius: 8px; 
+             z-index: 0; 
+         } 
+         
+         .campus-content { 
+             position: relative; 
+             z-index: 1; 
+         } 
+         
+         .campus-caption { 
+             text-align: center; 
+             color: #7f8c8d; 
+             font-size: 0.9em; 
+             font-style: italic; 
+             margin-top: 15px; 
+             padding-top: 15px; 
+             border-top: 1px solid #e9ecef; 
+         } 
+         
+         @media (max-width: 768px) { 
+             body { 
+                 padding: 10px; 
+             } 
+             
+             .container { 
+                 padding: 20px; 
+             } 
+         } 
      </style> 
  </head> 
 <body>
@@ -513,19 +560,22 @@
                     
                 </ul>
             </div>
-             <div class="work-item">
-                <h3><span class="research-icon">📚</span>个人兴趣比赛</h3>
-                <ul>
-                    <li>CCF开源competition:基于 openvela 的智能手环应用开发（进行中）</li>
-                    <li>CCF开源competition:基于 openvela智能体 的智能家居控制系统（进行中）</li>
-                    <li>kaggle</li>
-                    <li>6th计图人工智能挑战赛</li>
-                    <li>MVAA(MICCAI2026)</li>
-                    <li>CMR(MICCAI2026)
-              </li>
-                    
-                </ul>
-            </div>
+            <section class="campus-background"> 
+             <div class="campus-content"> 
+                 <div class="work-item"> 
+                     <h3><span class="research-icon">📚</span>个人兴趣比赛</h3> 
+                     <ul> 
+                         <li>CCF开源competition:基于 openvela 的智能手环应用开发（进行中）</li> 
+                         <li>CCF开源competition:基于 openvela智能体 的智能家居控制系统（进行中）</li> 
+                         <li>kaggle</li> 
+                         <li>6th计图人工智能挑战赛</li> 
+                         <li>MVAA(MICCAI2026)</li> 
+                         <li>CMR(MICCAI2026)</li> 
+                     </ul> 
+                 </div> 
+             </div> 
+             <p class="campus-caption">校园环境</p> 
+         </section> 
             
             <div class="work-item">
                 <h3><span class="research-icon">👥</span> ；感谢本科期间合作伙伴</h3>
